@@ -111,7 +111,7 @@ Create a `.sq` file where you define your database schema using SQL.
 
 For example, let's create a `favorite_movies.sq` file, that file should be located in the root folder of your module, i.e if you are creating your database in `commonMain` of your `:shared` module, the folder structure should be `shared\src\commonMain\sqldelight\dev.funkymuse.myapp.shared.database` where you append your package name.
 
-It should look like this <img src="/assets/img/sql_delight/package_structure.png" alt = "" class="center" >
+It should look like this <img src="/assets/img/sql_delight/package_structure.png" alt = "package structure" class="center" >
 
 The `.sq` file contains the following:
 ```sql
