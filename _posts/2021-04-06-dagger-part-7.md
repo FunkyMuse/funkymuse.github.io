@@ -5,7 +5,7 @@ categories: [Dagger]
 tags: [Dagger, Kotlin, Android]
 ---
 
-<img src="/assets/img/dagger/dagger_title.jpeg" class="center">
+<img src="/assets/img/dagger/dagger_title.jpeg" alt ="" class="center">
 
 In the [previous](/posts/dagger-part-6/) post we've encountered when's the right place to inject, named and qualifiers.
 
@@ -481,7 +481,7 @@ abstract class CarsModule {
 }
 ```
 `@Binds` works nearly the same as `@Provides` which can only provide dependencies of abstract functions that you already have an implementation for and the way it creates them is way more effecient than `@Provides`, which means try to use `@Binds` as much as you can, clean architecture picture in 3...2...1...
-<img src="/assets/img/dagger/7/clean_code.jpeg" class="center">
+<img src="/assets/img/dagger/7/clean_code.jpeg" alt ="" class="center">
 
 
 You might not be familiar with why `Provider` is used in this case, sometimes you need multiple instances of the same type to be returned instead of just injecting a single value, meaning that you can have that `TestViewModel` inside a `HomeFragment`, `LoginFragment` and `YourNameHereFragment` etc... etc..
@@ -576,6 +576,6 @@ Run it and it works.
 You might think there's nothing wrong with this but there actually is, everything is scoped to `@Singleton`, also getting a `SavedStateHandle` requires to use `AssistedInject` that requires a lot of changing which won't matter once we start using *Hilt* from the next part as this is sufficient for today and this blog post is longer than I anticipated also every bit of this informations needs some time for you to stomach it.
 
 From the next blog post, we're jumping onto the **Hilt** train and see where it goes, also **Hilt** in a nutshell
-<img src="/assets/img/dagger/7/hilt.jpeg" class="center">
+<img src="/assets/img/dagger/7/hilt.jpeg" alt ="" class="center">
 
 Thank you again for your wholehearted attention and stay tuned for the Hilt blog series.

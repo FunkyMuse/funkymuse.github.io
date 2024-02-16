@@ -5,7 +5,7 @@ categories: [Gradle]
 tags: [Gradle]
 ---
 
-<img src="/assets/img/gradle_abstraction/gradle_sad_reality.jpg" class="center">
+<img src="/assets/img/gradle_abstraction/gradle_sad_reality.jpg" alt ="" class="center">
 
 
 ## Complications
@@ -18,10 +18,10 @@ One day you woke up and chose violence, copy pasting the same config over and ov
 
 You decided to create a new module (hope this post doesn't hurt your ego)
 
-<img src="/assets/img/gradle_abstraction/1.png" class="center">
+<img src="/assets/img/gradle_abstraction/1.png" alt ="" class="center">
 
 then another module
-<img src="/assets/img/gradle_abstraction/2.png" class="center">
+<img src="/assets/img/gradle_abstraction/2.png" alt ="" class="center">
 
 and you had to duplicate this in every gradle file, you hated your life because *Gradle* doesn't simplify this out of the box, but don't worry, we all hate *Gradle* because it's complicated for no reason and a build system shouldn't be, but hey, maybe *Bazel* will get more attention in the future.
 
@@ -154,7 +154,7 @@ void applyComposeUIDeps(project) {
 ```
 
 I gotchu
-<img src="/assets/img/gradle_abstraction/3.png" class="center">
+<img src="/assets/img/gradle_abstraction/3.png" alt ="" class="center">
 
 ### Drawback
 
@@ -186,11 +186,11 @@ subprojects {
 ```
 
 ### End result
-<img src="/assets/img/gradle_abstraction/4.png" class="center">
+<img src="/assets/img/gradle_abstraction/4.png" alt ="" class="center">
 
 some of your feature `build.gradle` modules will look really short
 
-<img src="/assets/img/gradle_abstraction/5.png" class="center">
+<img src="/assets/img/gradle_abstraction/5.png" alt ="" class="center">
 
 
 You can check this approach in my other open source [project](https://github.com/FunkyMuse/Aurora/blob/main/build.gradle).
@@ -205,4 +205,4 @@ Don't forget to drink water, it's summer and it's hot.
 Thanks for reading, stay cool and also cool.
 
 
-<img src="/assets/img/gradle_abstraction/goodbye.jpg" class="center">
+<img src="/assets/img/gradle_abstraction/goodbye.jpg" alt ="" class="center">

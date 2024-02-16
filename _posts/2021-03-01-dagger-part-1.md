@@ -5,7 +5,7 @@ categories: [Dagger]
 tags: [Dagger, Kotlin, Android]
 ---
 
-<img src="/assets/img/dagger/dagger_title.jpeg" class="center">
+<img src="/assets/img/dagger/dagger_title.jpeg" alt ="" class="center">
 
 One day you decided to use Dagger2 and then you were lost, don't worry, most of us were already there, Dagger2 is easy, you'll see, it's literally one interface, let's start.
 
@@ -13,7 +13,7 @@ A little bit of history, Dagger2 is a continuation by Google from the Dagger 1 m
 
 It's a compile time DI library and this comes in handy due to the validation, based on the 330 JSR DI standard that's just one interface 
 
-<img src="/assets/img/dagger/1/1.png" class="center">
+<img src="/assets/img/dagger/1/1.png" alt ="" class="center">
 
 We won't talk about the dreaded dagger-android here because some mistakes should remain mistakes and we won't be talking about the thermosiphon eithet.
 
@@ -145,7 +145,7 @@ You may ask yourself why the variable can't be private, where is the correct way
 
 Remember, Dagger2 is easy 
 
-<img src="/assets/img/dagger/1/2.gif" class="center">
+<img src="/assets/img/dagger/1/2.gif" alt ="" class="center">
 
 This is just the tip of the iceberg, more is coming.
 

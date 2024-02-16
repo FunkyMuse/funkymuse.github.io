@@ -4,7 +4,7 @@ date: 2023-05-17 17:01:00 +0200
 categories: [Hilt, Compose, Android, Navigation]
 tags: [Hilt, Kotlin, Compose, Android, Navigation]
 ---
-<img src="/assets/img/compose/compose_logo.png" class="center" >
+<img src="/assets/img/compose/compose_logo.png" alt ="" class="center" >
 
 ## Intro
 ---

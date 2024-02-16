@@ -5,7 +5,7 @@ categories: [Android]
 tags: [Android]
 ---
 
-<img src="/assets/img/2/1.png" class="center">
+<img src="/assets/img/2/1.png" alt ="" class="center">
 
 If you ever looked at this image and wondered, why this blog post is written when I as a developer was promised a low amount of code needed for view binding to work, well technically that's true, but also false at the same time.
  
@@ -235,7 +235,7 @@ class TestFragment : Fragment() {
 ```
 We have to create it, inflate it, set it to null in onDestroyView()
 
-<img src="/assets/img/2/2.gif" class="center">
+<img src="/assets/img/2/2.gif" alt ="" class="center">
 
 
 But why set it to null?
@@ -400,4 +400,4 @@ and/or include the library/helper I published to forget even copy/pasting the co
 
 That's it folks, View binding is now easy to work with, an elegant solution and replacement for synthetics which are soon to be deprecated and the nasty findViewById, no more deprecations huh, finally a good solution?
 
-<img src="/assets/img/2/3.jpg" class="center">
+<img src="/assets/img/2/3.jpg" alt ="" class="center">

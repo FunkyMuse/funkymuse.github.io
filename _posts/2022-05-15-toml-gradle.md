@@ -5,7 +5,7 @@ categories: [Android, Gradle]
 tags: [Android, Gradle, Dependencies]
 ---
 
-<img src="/assets/img/11/gradle.png" class="center">
+<img src="/assets/img/11/gradle.png" alt ="" class="center">
 
 ## Intro
 ---
@@ -227,4 +227,4 @@ This is my first article in 2022 as i've been spending this year learning Compos
 
 Here's a picture of two red pandas to make your day more awesome.
 
-<img src="/assets/img/11/red_pandas.webp" class="center">
+<img src="/assets/img/11/red_pandas.webp" alt ="" class="center">

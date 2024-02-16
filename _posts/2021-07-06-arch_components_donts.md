@@ -5,13 +5,13 @@ categories: [Jetpack, Android, Architecture Components]
 tags: [Jetpack, Android, Architecture Components]
 ---
 
-<img src="/assets/img/arch_components_mistakes/1.jpeg" class="center">
+<img src="/assets/img/arch_components_mistakes/1.jpeg" alt ="" class="center">
 
 Android, ehh, Android.... development is what is always described as one of the painful things, but we still love it tho, of course there's a reason why Android's messy, but have you seen front-end development?
 
 Everything was peaceful untill `Fragment`s were introduced with their own lifecycle and to make things messier, Google decided to make things even more messier, `Fragment`'s view will have it's own lifecycle.
 
-<img src="/assets/img/arch_components_mistakes/burn.gif" class="center">
+<img src="/assets/img/arch_components_mistakes/burn.gif" alt ="" class="center">
 
 
 Nevertheless `Fragment`'s nowadays are matured and more stable than the ones 2 years ago.
@@ -159,7 +159,7 @@ class DetailedMovieFragment : Fragment(R.layout.fragment_detailed_movie){
 ✅ Use the `init` function inside the `ViewModel`, that's called only once when the `ViewModel` is created.
 
 
-<img src="/assets/img/arch_components_mistakes/2.jpg" class="center">
+<img src="/assets/img/arch_components_mistakes/2.jpg" alt ="" class="center">
 
 
 ## Misusing data holders
@@ -278,7 +278,7 @@ private val movieData : MutableStateFlow<DetailedMovieModel?> = MutableStateFlow
 val movie = movieData.asStateFlow()
 ```
 
-<img src="/assets/img/arch_components_mistakes/2.jpg" class="center">
+<img src="/assets/img/arch_components_mistakes/2.jpg" alt ="" class="center">
 
 
 ## Leaking ViewModels
@@ -359,7 +359,7 @@ You know about NOT referencing Views inside a `ViewModel` DO NOT DO OBSERVE ANYT
 
 One day I opened the `proton-mail-android` app and glanced over [EditContactDetailsViewModel](https://github.com/ProtonMail/proton-mail-android/blob/release/app/src/main/java/ch/protonmail/android/contacts/details/edit/EditContactDetailsViewModel.kt)
 
-<img src="/assets/img/arch_components_mistakes/3.png" class="center">
+<img src="/assets/img/arch_components_mistakes/3.png" alt ="" class="center">
 
 🚫 Don't ever do this.
 
@@ -414,7 +414,7 @@ mailboxViewModel.hasSuccessfullyDeletedMessages.observe(
         )
 ```
 
-<img src="/assets/img/arch_components_mistakes/least.gif" class="center">
+<img src="/assets/img/arch_components_mistakes/least.gif" alt ="" class="center">
 
 After some time Google came up with a hacky solution to use a nightmare called `Event`
 
@@ -452,6 +452,6 @@ Keep it simple, stupid.
 
 This post is more like a rant, hope your ego isn't hurt so far and you learnt to make the code a better place.
 
-<img src="/assets/img/arch_components_mistakes/2.jpg" class="center">
+<img src="/assets/img/arch_components_mistakes/2.jpg" alt ="" class="center">
 
 Thanks for reading and not getting hurt (hopefully).

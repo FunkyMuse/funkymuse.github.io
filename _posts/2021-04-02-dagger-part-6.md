@@ -5,7 +5,7 @@ categories: [Dagger]
 tags: [Dagger, Kotlin, Android]
 ---
 
-<img src="/assets/img/dagger/dagger_title.jpeg" class="center">
+<img src="/assets/img/dagger/dagger_title.jpeg" alt ="" class="center">
 
 In the [previous](/posts/dagger-part-5/) post we've encountered subcomponents and their hierarchy, custom scopes and we did not waste any time.
 
@@ -94,7 +94,7 @@ we changed from `AppcompatActivity.injector` to `FragmentActivity` so that we ca
 reuse it for our `Fragment.injector` which has a `requireActivity()` that's of a type 
 `FragmentActivity`.
 
-<img src="/assets/img/dagger/6/very_nice.jpg" class="center">
+<img src="/assets/img/dagger/6/very_nice.jpg" alt ="" class="center">
 
 
 ## Activity's correct place for injection
@@ -438,7 +438,7 @@ val filter = IntentFilter(Intent.ACTION_POWER_CONNECTED).also {
 
 when the power connects/disconnects we have the following
 
-<img src="/assets/img/dagger/6/power_demonstration_1.png" class="center">
+<img src="/assets/img/dagger/6/power_demonstration_1.png" alt ="" class="center">
 
 
 `B.` If you're manually registering the receiver then you can use constructor injection to get an instance of your receiver and register it with that instance, since you're using
@@ -600,6 +600,6 @@ Inside your `AndroidManifest.xml`
 ---
 Probably everyone's wondering, why's there no blog post about **Hilt** since it's easier, yes *Hilt* is easier because it does all of this for you behind the scenes so that you don't have to do it, there's one more blog post about the dreaded but powerful `Multi bindings`, I won’t cover WorkManager’s injection using this example but you saw how much boilerplate we have to write and after the `Multi bindings` post we’re jumping to the Hilt train, which offers easier integration with `WorkManager` and with practically everything, not just `Workmanager`.
 
-<img src="/assets/img/dagger/6/patterns.png" class="center">
+<img src="/assets/img/dagger/6/patterns.png" alt ="" class="center">
 
 [Part #7](/posts/dagger-part-7/)

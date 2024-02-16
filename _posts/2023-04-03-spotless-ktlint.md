@@ -4,7 +4,7 @@ date: 2023-04-03 13:50:00 +0100
 categories: [Android]
 tags: [Android]
 ---
-<img src="/assets/img/spotless/spotless_logo.png" class="center" >
+<img src="/assets/img/spotless/spotless_logo.png" alt ="" class="center" >
 
 ## What is spotless?
 ---

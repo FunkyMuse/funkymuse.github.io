@@ -5,7 +5,7 @@ categories: [Dagger]
 tags: [Android, Kotlin, Dagger]
 ---
 
-<img src="/assets/img/dagger/dagger_title.jpeg" class="center">
+<img src="/assets/img/dagger/dagger_title.jpeg" alt ="" class="center">
 
 Into the [Part #7](/posts/dagger-part-7/) of the Dagger series, we saw how complicated `ViewModel` injection can be on Android, but that can be easily fixed with `@AssistedInject`.
 
@@ -112,4 +112,4 @@ However *Hilt* makes all of this go away and should be the preferred solution fo
 
 Happy coding.
 
-<img src="/assets/img/hilt/1/hilt_1.jpg" class="center">
+<img src="/assets/img/hilt/1/hilt_1.jpg" alt ="" class="center">

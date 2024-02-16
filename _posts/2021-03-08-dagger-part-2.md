@@ -5,7 +5,7 @@ categories: [Dagger]
 tags: [Dagger, Kotlin, Android]
 ---
 
-<img src="/assets/img/dagger/dagger_title.jpeg" class="center">
+<img src="/assets/img/dagger/dagger_title.jpeg" alt ="" class="center">
 
 We're here again telling ourselves that Dagger2 is easy, as we've seen in the first [part](/posts/dagger-part-1/).
 
@@ -85,7 +85,7 @@ Oh okay Dagger, but why?
 
 When the graph has your object it knows about the package and it's name when you annotated it with @**Inject** since this is transformed by an *annotation processor*, that's a limitation of the *annotation processor*, it needs to be visible in the package, so that means you can make the variable internal in this case and it will work, basically Dagger sets the lateininit value to the one it has in the graph but it can't be private due to the the variable not visible out of the class.
 
-<img src="/assets/img/dagger/2/1.gif" class="center">
+<img src="/assets/img/dagger/2/1.gif" alt ="" class="center">
 
 [Part #3](/posts/dagger-part-3/)
 

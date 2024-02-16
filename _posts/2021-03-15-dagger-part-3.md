@@ -5,7 +5,7 @@ categories: [Dagger]
 tags: [Dagger, Kotlin, Android]
 ---
 
-<img src="/assets/img/dagger/dagger_title.jpeg" class="center">
+<img src="/assets/img/dagger/dagger_title.jpeg" alt ="" class="center">
 
 In the [previous](/posts/dagger-part-2/) post we've seen simpler form of injection with Dagger, but we haven't talked about the types of injection that Dagger2 has to offer.
 
@@ -126,12 +126,12 @@ This example allowed us to notice the order Dagger2 does the injection:
 
 Run the project and see the log
 
-<img src="/assets/img/dagger/3/1.png" class="center">
+<img src="/assets/img/dagger/3/1.png" alt ="" class="center">
 
 when **Logger**'s constructor was called and **Logger** received our **Messenger** object, *Dagger* went on further to see for method *injection annotated functions*, it found our *addTextProcessor* and since it knew about **TextToStorage**'s conscturctor, we went on and **initialized** the listener, lastly the variable injection happened and logger.debug was called in the *MainActivity*.
 
 As you can notice that Logger was constructed how it supposed to be, our **Messenger** did it's job and our **TextToStorage** functionality was called without even the need to manually call for a constructor or for the class to know *about the object's creation*, all in all this demonstrates the power of Dagger2 and how it can scale further.
 
-<img src="/assets/img/dagger/3/2.jpg" class="center">
+<img src="/assets/img/dagger/3/2.jpg" alt ="" class="center">
 
 [Part #4](/posts/dagger-part-4/)

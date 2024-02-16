@@ -5,7 +5,7 @@ categories: [Hilt, Compose]
 tags: [Hilt, Kotlin, Compose, Android]
 ---
 
-<img src="/assets/img/nav_mm_hilt/header.png" class="center">
+<img src="/assets/img/nav_mm_hilt/header.png" alt ="" class="center">
 
 
 If you've written an Android application you must have had some form of navigation inside your project, whether that's manually starting Activities or managing Fragment transactions on your own (hopefully you didn't have to do this) or using navigation component, this is an article for you.
@@ -54,7 +54,7 @@ You might ask yourself, why's this a functional interface?
 
 Sometimes you might never add arguments, for example your app provide crash reports on your own, your user can navigate from Settings > Crash reports, for that case we have a default for our arguments and the route has to be included every time.
 
-<img src="/assets/img/nav_mm_hilt/1.png" class="center">
+<img src="/assets/img/nav_mm_hilt/1.png" alt ="" class="center">
 
 
 The other building block we need is the events, every app has a navigate to and navigate from, of course this doesn't stop you to add more events as they can be tailored to your use case, these are the most commonly used, for that purpose we have our Navigator
@@ -133,12 +133,12 @@ class NavigatorViewModel @Inject constructor(
 
  `Navigator` has the necessary elements for navigating and we can delegate them to this `ViewModel` which will be our navigator mechanism within the composable, we can end up having a logic where we only need navigation to destinations without any other logic and we can use the `NavigatorViewModel`
 
-<img src="/assets/img/nav_mm_hilt/3.png" class="center">
+<img src="/assets/img/nav_mm_hilt/3.png" alt ="" class="center">
 
 or we can have it injected into a view model (as the picture above) wherever we need the functionality for later on (pictures below)
 
-<img src="/assets/img/nav_mm_hilt/4.png" class="center">
-<img src="/assets/img/nav_mm_hilt/5.png" class="center">
+<img src="/assets/img/nav_mm_hilt/4.png" alt ="" class="center">
+<img src="/assets/img/nav_mm_hilt/5.png" alt ="" class="center">
 
 The navigation destination is really simple, but yet confusing
 
@@ -164,13 +164,13 @@ object BookDetailsDestination : NavigationDestination {
 In order to wire the whole navigation we only need this included in the app level where we set up our navigation
 
 
-<img src="/assets/img/nav_mm_hilt/6.png" class="center">
-<img src="/assets/img/nav_mm_hilt/7.png" class="center">
+<img src="/assets/img/nav_mm_hilt/6.png" alt ="" class="center">
+<img src="/assets/img/nav_mm_hilt/7.png" alt ="" class="center">
 
 
 Our navigation module end up looking really short
 
-<img src="/assets/img/nav_mm_hilt/8.png" class="center">
+<img src="/assets/img/nav_mm_hilt/8.png" alt ="" class="center">
 
 
 
@@ -189,7 +189,7 @@ The approach I took for a client (due to NDAs i'm not supposed to reveal the app
 
 
 Your project will look like this or you might add another layer in between that creates a database
-<img src="/assets/img/nav_mm_hilt/9.png" class="center">
+<img src="/assets/img/nav_mm_hilt/9.png" alt ="" class="center">
 
 
 You might think, we're creating a lot of modules, yes we are, we're creating reusable parts that we can easily test and plug-in, plug-out or replace whenever we need to, some argue that good architecture is expensive, but have you tried bad architecture?
@@ -198,7 +198,7 @@ Compose UI enables us to hoist everything up to the top function and we can have
 
 For example a confirmation dialog
 
-<img src="/assets/img/nav_mm_hilt/10.png" class="center">
+<img src="/assets/img/nav_mm_hilt/10.png" alt ="" class="center">
 
 
 

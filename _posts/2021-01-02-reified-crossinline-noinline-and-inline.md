@@ -5,7 +5,7 @@ categories: [Kotlin]
 tags: [Kotlin]
 ---
 
-<img src="https://www.mememaker.net/static/images/memes/4773372.jpg" class="center">
+<img src="https://www.mememaker.net/static/images/memes/4773372.jpg" alt ="" class="center">
 
 This is a continuation of the previous [blog post](/posts/higher-order-functions/).
 
@@ -71,10 +71,10 @@ Well this is Java's world, which applies to Kotlin but with some smart decisions
 
 If we were to add inline modifier to printBarkMessage and override the printBarkMessage in our **Husky** class we'd get
 
-<img src="/assets/img/4/1.png">
+<img src="/assets/img/4/1.png" alt ="" >
 
 it suggests you to make it open, but even if you do
-<img src="/assets/img/4/2.png">
+<img src="/assets/img/4/2.png" alt ="" >
 
 you can't inline it, Kotlin has solved the problem for us but does it end here?
 
@@ -149,7 +149,7 @@ But how does this happen actually?
 
 You probably heard of the interface [Type](https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Type.html), which is the superinterface of all types in the JVM.
 
-<img src="/assets/img/4/3.png" class="center">
+<img src="/assets/img/4/3.png" alt ="" class="center">
 
 As you can see Class is implementing this interface
 
@@ -159,7 +159,7 @@ Any::class.java.genericSuperClass
 ``` 
 it returns a [Type](https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Type.html), but Type won't do us any good since it only hold a name describing itself but we can cast the Type to a **ParameterizedType**.
 
-<img src="/assets/img/4/4.png" class="center">
+<img src="/assets/img/4/4.png" alt ="" class="center">
 
 
 and now we have an array of actual type arguments that hold the object representing the actualy type argument, we need the first object only.
@@ -188,7 +188,7 @@ Additionaly JVM has ***limits*** of up to **64K** bytecode instructions for a si
 Hope you learned something new today.
 Back to writing Kotlin.
 
-<img src="/assets/img/1/4.jpg" class="center">
+<img src="/assets/img/1/4.jpg" alt ="" class="center">
 
 You can inline properties you know?
 
@@ -236,7 +236,7 @@ object RxBus {
 }
 ```
  
- <img src="/assets/img/4/6.jpg" class="center">
+ <img src="/assets/img/4/6.jpg" alt ="" class="center">
 
 
 

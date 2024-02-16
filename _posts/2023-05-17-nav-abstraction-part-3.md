@@ -4,7 +4,7 @@ date: 2023-05-17 17:02:00 +0200
 categories: [Hilt, Compose, Android, Navigation]
 tags: [Hilt, Kotlin, Compose, Android, Navigation]
 ---
-<img src="/assets/img/compose/compose_logo.png" class="center" >
+<img src="/assets/img/compose/compose_logo.png" alt ="" class="center" >
 
 ## Intro
 ---
@@ -891,7 +891,7 @@ This is an article that might not fit your case, it solved my problem, might not
 
 A capybara to make your day more chill, as they're one of the chillest animals.
 
-<img src="/assets/img/nav_abstraction/capybara.jpg" class="center" >
+<img src="/assets/img/nav_abstraction/capybara.jpg" alt ="" class="center" >
 
 At last, a video of the sample app and demonstration of everything so far and everything else that did not fit in these series of blog posts (as some parts were skipped because they can be looked into the code and understood as they're straight forward)
 

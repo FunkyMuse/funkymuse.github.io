@@ -5,7 +5,7 @@ categories: [ KMP, Kotlin, Multiplatform, AndroidX ]
 tags: [ Kotlin, KMP, Android, Desktop, iOS, Multiplatform, AndroidX ]
 ---
 
-<img src="/assets/img/kmp/kmp.png" class="center" >
+<img src="/assets/img/kmp/kmp.png" class="center" alt ="">
 
 I decided to delve into Kotlin Multiplatform (KMP), and I quickly became hooked. 
 That was a year ago, and I was initially hesitant due to the numerous `build.gradle` configurations that made my head spin. 
@@ -338,7 +338,7 @@ fun main() = application {
 ```
 and now with the helper property, you can just use `coreComponent.appPreferences` whenever you need it.
 
-<img src="/assets/img/kmp/kmp_meme.gif" class="center" >
+<img src="/assets/img/kmp/kmp_meme.gif" alt ="" class="center" >
 
 ## That's all folks
 

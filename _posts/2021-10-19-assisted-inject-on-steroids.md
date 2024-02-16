@@ -5,7 +5,7 @@ categories: [Dagger, Hilt]
 tags: [Android, Kotlin, Hilt]
 ---
 
-<img src="/assets/img/assisted_steroids/1.jpg" class="center">
+<img src="/assets/img/assisted_steroids/1.jpg" alt ="" class="center" alt ="" >
 
 Lives of so many developers were easy before `@AssistedInject` came to `Dagger2`, they still are, but as usual `Dagger2` is explained with so many complications that even an experienced developer can go bonkers, when in fact it's dead simple.
 
@@ -18,7 +18,7 @@ The building blocks of a dependency that you can inject with an assistance from 
 2. The factory (interface), annoated with `@AssistedFactory`
 3. Create (or better named method by yourself) within the factory that returns the assisted preference that also accepts the same function parameters as the ones you'll need to assist your DI library with, in order to create your assisted dependency.
 
-<img src="/assets/img/assisted_steroids/2.jpeg" class="center">
+<img src="/assets/img/assisted_steroids/2.jpeg" alt ="" class="center">
 
 Today you'll build something you've used for sure, one time shared preference manager, on steroids.
 
@@ -116,7 +116,7 @@ class DashboardFragment : Fragment() {
     }
 }
 ```
-<img src="/assets/img/assisted_steroids/3.jpeg" class="center">
+<img src="/assets/img/assisted_steroids/3.jpeg" alt ="" class="center">
 
 As you no doubt have guessed by now, there are limitations that you have to deal with when using `@AssistedInject`
 1. `@AssistedInject` types(dependencies) cannot be injected directly, only the `@AssistedFactory` can be injected
@@ -168,6 +168,6 @@ class DashboardFragment : Fragment() {
 }
 ```
 
-<img src="/assets/img/assisted_steroids/cool.gif" class="center">
+<img src="/assets/img/assisted_steroids/cool.gif" alt ="" class="center">
 
 That's all for this blog post, stay tuned for more.

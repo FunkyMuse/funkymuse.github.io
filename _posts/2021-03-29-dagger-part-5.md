@@ -5,7 +5,7 @@ categories: [Dagger]
 tags: [Dagger, Kotlin, Android]
 ---
 
-<img src="/assets/img/dagger/dagger_title.jpeg" class="center">
+<img src="/assets/img/dagger/dagger_title.jpeg" alt ="" class="center">
 
 In the [previous](/posts/dagger-part-4/) post we've explored scope operators.
 
@@ -128,7 +128,7 @@ inside *DaggerIsEasyApplication* and after `onCreate()` just right before the `s
 ```
 now when we launch the application, we see the following log
 
-<img src="/assets/img/dagger/5/1.png" class="center">
+<img src="/assets/img/dagger/5/1.png" alt ="" class="center">
 
 when we rerun the app, we won't see the log.
 
@@ -246,7 +246,7 @@ class MainActivity : AppCompatActivity() {
 ```
 When we run the app we can see that we're suffering from success.
 
-<img src="/assets/img/dagger/5/2.png" class="center">
+<img src="/assets/img/dagger/5/2.png" alt ="" class="center">
 
 For demonstrational purposes, we want to have `savedInstanceState: Bundle?` as a runtime variable and the `intent` within the `ActivityScoped` instances, change the `ActivityComponent's` *subcomponent factory*
 
@@ -347,13 +347,13 @@ inline fun AppCompatActivity.injector(action: SingletonComponent.() -> Unit) {
     (application as DaggerIsEasyApplication).applicationComponent.action()
 }
 ```
-<img src="/assets/img/dagger/5/3.png" class="center">
+<img src="/assets/img/dagger/5/3.png" alt ="" class="center">
 
 let's enjoy a bit tidier code, even tidier when we'll start using *Hilt* in the future articles. 
 
 Some might argue that you'll replace vanilla Dagger completely, well... not quite, inside feature modules you'll still need to know the concepts (especially factories and components) of pure Dagger, because Hilt doesn't entirely replace Dagger, it's built on top of Dagger to abstract away the Android's runtime boilerplate setup that you have to do every time you create a new project.
 
 
-<img src="https://i.gifer.com/Z92U.gif" class = "center">
+<img src="https://i.gifer.com/Z92U.gif" alt ="" class = "center">
 
 [Part #6](/posts/dagger-part-6/)

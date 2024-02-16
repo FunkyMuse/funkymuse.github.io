@@ -5,7 +5,7 @@ categories: [MVI, Architecture, Android]
 tags: [Android, Architecture, MVI]
 ---
 
-<img src="/assets/img/mvi/mvvm_mvc.jpg" class="center">
+<img src="/assets/img/mvi/mvvm_mvc.jpg" alt ="" class="center">
 
 Android development is a vast topic that you can merely master and since it constantly evolves it's even harder to do so, that's why there are teams working on one application that does more than one thing and then there's the guy that wrote Telegram all by himself.
 
@@ -63,7 +63,7 @@ Otherd may argue that it's also **MVP** that doesn't necessarily mean that you h
 
 \* *AAC = Android architecture components*
 
-<img src="/assets/img/mvi/pepe-cry.gif" class="center">
+<img src="/assets/img/mvi/pepe-cry.gif" alt ="" class="center">
 
 ## The holy grail, MVI or waiting for another coming? 
 ---
@@ -225,7 +225,7 @@ It seems that nowadays it's popular to fight about Library X is better than Libr
 
 But then again you have the androidx.`ViewModel` standing in your way in that whole "**MVI**" naming doing it's thing.
 
-<img src="/assets/img/mvi/mvi_mock.jpeg" class="center">
+<img src="/assets/img/mvi/mvi_mock.jpeg" alt ="" class="center">
 
 
 ## Sealed classes, MVI, my mind hurts already, but why?
@@ -261,7 +261,7 @@ At the time of writing i've come up with a solution for my own needs when i'm an
 
 This is an opinionated article and many people would be butthurt and won't like what they read.
 
-<img src="/assets/img/mvi/elmo.gif" class="center">
+<img src="/assets/img/mvi/elmo.gif" alt ="" class="center">
 
 Thank you for your ***attention***, stay **safe**, until next time.
 

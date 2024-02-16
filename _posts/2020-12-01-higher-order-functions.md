@@ -5,7 +5,7 @@ categories: [Kotlin]
 tags: [Kotlin]
 ---
 
-<img src="https://kotlinlang.org/assets/images/open-graph/kotlin_250x250.png" class="center">
+<img src="https://kotlinlang.org/assets/images/open-graph/kotlin_250x250.png" alt ="" class="center">
 
 
 This is the last blog post of 2020, let's end it with some Kotlin awesomeness.
@@ -66,11 +66,11 @@ setTargetListener { long, int ->
 
 Kotlin has a beautiful syntax which provides you with this amazing functionality to remove the () after setTargetListener and just enjoy your lambda if it's the last parameter.
 
-<img src="/assets/img/3/1.png">
+<img src="/assets/img/3/1.png" alt ="" >
 
 Now now, the setTargetListener is provided with a beautiful syntax by auto complete, but we see a major issue here, they're called Long, Int, or once you choose the option they become
 
-<img src="/assets/img/3/2.png">
+<img src="/assets/img/3/2.png" alt ="" >
 
 
 We don't want that obscurity, let's try something else.
@@ -85,7 +85,7 @@ fun setTargetListener(callback: (timeStamp: Long, calculationResult : Int) -> Un
 
 Now we've added names to our parameters inside the lambda block and now we get something that's more readable.
 
-<img src="/assets/img/3/3.png">
+<img src="/assets/img/3/3.png" alt ="" >
 
 
 ```kotlin
@@ -109,7 +109,7 @@ fun setTargetListener(firstLambda: () -> Unit, callback: (timeStamp: Long, calcu
 
 and now an error arises
 
-<img src="/assets/img/3/4.png">
+<img src="/assets/img/3/4.png" alt ="" >
 
 setTargetListener is expecting another lambda, what can we do?
 
@@ -308,4 +308,4 @@ If you wanna read an overused joke, cya in 2021.
 
 Thank you for your patience and wholehearted attention.
 
-<img src="/assets/img/3/5.jpeg" class="center">
+<img src="/assets/img/3/5.jpeg" alt ="" class="center">

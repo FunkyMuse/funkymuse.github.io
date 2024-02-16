@@ -5,7 +5,7 @@ categories: [ KMP, Kotlin, Multiplatform, AndroidX ]
 tags: [ Kotlin, KMP, Android, Desktop, iOS, Multiplatform, AndroidX ]
 ---
 
-<img src="/assets/img/kmp/kmp.png" class="center" >
+<img src="/assets/img/kmp/kmp.png" alt ="" class="center" >
 
  One essential aspect of many applications is persistent data storage and SQLDelight is a popular library for managing database interactions in Kotlin projects. 
  

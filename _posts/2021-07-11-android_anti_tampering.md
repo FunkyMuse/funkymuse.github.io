@@ -5,7 +5,7 @@ categories: [Android, Security]
 tags: [Android, Security]
 ---
 
-<img src="/assets/img/10/1.jpg" class="center">
+<img src="/assets/img/10/1.jpg" class="center" alt ="" >
 
 
 ## The big problem
@@ -674,7 +674,7 @@ It does static and dynamic analysis.
 
 **Always** assume that the user of the application is dumb.
 
-<img src="/assets/img/10/3.webp" class="center">
+<img src="/assets/img/10/3.webp" class="center" alt ="" >
 
 You need to create a guide explaining how the user should take precaution and do that thoroughly, not everyone is a *power* user or knows the system pretty well.
 

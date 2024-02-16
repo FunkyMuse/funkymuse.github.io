@@ -5,7 +5,7 @@ categories: [ Compose, Android, Navigation ]
 tags: [ Kotlin, Compose, Android, Navigation ]
 ---
 
-<img src="/assets/img/compose/compose_logo.png" class="center" >
+<img src="/assets/img/compose/compose_logo.png" alt ="" class="center" >
 
 ## Intro
 
@@ -68,7 +68,7 @@ And each **Destination** renders UI, but we'll decouple that from the navigation
 it's important to note that the part that's gonna be responsbile for rendering the UI will be called `Content`,
 you can host your UI logic inside a `Content` object that will implement the generated destination.
 
-<img src="/assets/img/nav_type_safe/joke_1.jpg" class="center" >
+<img src="/assets/img/nav_type_safe/joke_1.jpg" alt ="" class="center" >
 
 # Setup
 
@@ -81,7 +81,7 @@ no matter if it's *single module* or *multi module*.
 
 It's based on KSP's plugin to generate code with the help of KotlinPoet by Square.
 
-<img src="/assets/img/nav_type_safe/joke_2.jpg" class="center" >
+<img src="/assets/img/nav_type_safe/joke_2.jpg" alt ="" class="center" >
 
 The library is available through [JitPack](https://jitpack.io/#FunkyMuse/foSho).
 

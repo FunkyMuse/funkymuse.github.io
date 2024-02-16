@@ -5,7 +5,7 @@ categories: [Dagger]
 tags: [Dagger, Kotlin, Android]
 ---
 
-<img src="/assets/img/dagger/dagger_title.jpeg" class="center">
+<img src="/assets/img/dagger/dagger_title.jpeg" alt ="" class="center">
 
 In the [previous](/posts/dagger-part-3/) post we've encountered method injection and learnt about the order of injection.
 
@@ -71,7 +71,7 @@ interface OurFirstComponent {
 
 now you think okay, we do have a singleton yaay
 
-<img src="/assets/img/dagger/4/not.gif" class="center">
+<img src="/assets/img/dagger/4/not.gif" alt ="" class="center">
 
 Let's create another activity for demonstration
 
@@ -124,7 +124,7 @@ class MainActivity : AppCompatActivity() {
 
 **don't forget** to add the activity inside the *manifest* and run the app.
 
-<img src="/assets/img/dagger/4/1.png" class="center">
+<img src="/assets/img/dagger/4/1.png" alt ="" class="center">
 
 Uhm, the Logger was initialized two times, confusing right?
 
@@ -160,7 +160,7 @@ TestSingleton.log(this::class.java.simpleName)
 ```
 and run the app
 
-<img src="/assets/img/dagger/4/2.png" class="center">
+<img src="/assets/img/dagger/4/2.png" alt ="" class="center">
 
 as you can clearly see the object is initialized only once, so who's to blame here?
 
@@ -228,7 +228,7 @@ class SecondActivity : AppCompatActivity() {
     }
 }
 ```
-<img src="/assets/img/dagger/4/3.png" class="center">
+<img src="/assets/img/dagger/4/3.png" alt ="" class="center">
 
 We've achieved some form of *singleton*, but not really, once process death restoration happens, 
 the objects annotated with @**Singleton** are re-created again and also everything else as well.
@@ -251,6 +251,6 @@ as for homework you can see how they've [implemented](https://github.com/google/
 
 Thanks for the wholeharted attention.
 
-<img src="/assets/img/dagger/4/great_success.gif" class="center">
+<img src="/assets/img/dagger/4/great_success.gif" alt ="" class="center">
 
 [Part #5](/posts/dagger-part-5/)

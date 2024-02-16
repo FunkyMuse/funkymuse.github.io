@@ -4,7 +4,7 @@ date: 2023-01-04 00:15:00 +0100
 categories: [Android, Compose, Jetpack Compose]
 tags: [Android, Compose, Jetpack Compose]
 ---
-<img src="/assets/img/compose/compose_logo.png" class="center" >
+<img src="/assets/img/compose/compose_logo.png" alt ="" class="center" >
 
 Hello to everyone and happy new year, my previous year was very busy with Ktor and Compose, I can say I learned what more I need to learn.
 
@@ -52,7 +52,7 @@ You might think?
 - I will use an event that'll be dispatcher to a flow/channel in the activity, pass it to the composable as a state, idk
 - Something else that's wildly creative but highly impractical
 
-<img src="/assets/img/compose/but_why.gif" class="center" >
+<img src="/assets/img/compose/but_why.gif" alt ="" class="center" >
 
 Let's say you have this setup
 ```kotlin
