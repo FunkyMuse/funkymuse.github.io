@@ -218,6 +218,23 @@ actual class DatabaseDriver {
 }
 ```
 
+Inside your `project.pbxproj` add `-lsqlite3` otherwise you'll get undenfied symbols error 
+
+```
+OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					composeApp,
+					"-lsqlite3",
+				);
+```                
+
+or via XCode add `-lsqlite3 to Other Liker Flags in your Bulid Settings` just as show in the picture.
+
+![img-description](https://user-images.githubusercontent.com/68384/63431953-1694e400-c3ee-11e9-98bd-e260b3b160ec.png)
+_Thanks to kpgalligan's [comment](https://github.com/cashapp/sqldelight/issues/1442#issuecomment-5234354920)_
+
+
 Inside `:jvmMain`/`:desktopMain` create a `DatabaseDriver.jvm.kt`
 
 ```kotlin
