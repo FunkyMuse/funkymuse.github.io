@@ -30,7 +30,7 @@ class OurFirstModule {
 ```
 
 ```kotlin
-class Logger {
+class Logger @Inject constructor() {
         fun log(text: String){
             Log.d(this::class.java.simpleName, text)
         }
