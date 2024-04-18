@@ -145,7 +145,7 @@ plugins {
 
 In your `:composeApp` or Android app entry point, be sure to include the following plugins:
 
-<img src="/assets/img/kmp-firebase-setup/add_project_19.png" alt = "package structure" class="center" >
+<img src="/assets/img/kmp-firebase-setup/add_project_20.png" alt = "package structure" class="center" >
 
 Ensure that your `:shared` module's `build.gradle.kts` contains the necessary setup.
 
