@@ -1,5 +1,5 @@
 ---
-title: KMP Firebase setup
+title: KMP (Kotlin Multiplatform) Firebase setup
 date: 2024-04-18 12:10:00 +0200
 categories: [ Kotlin, Android, iOS, KMP, Firebase ]
 tags: [ Kotlin, Android, iOS, KMP, Firebase ]
