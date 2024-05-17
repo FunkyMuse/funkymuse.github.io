@@ -86,6 +86,12 @@ commonMain.dependencies {
 You can enable project accessors in the `settings.gradle` file by adding this line:
 `enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")`.
 
+The resources are generated once you build the project, in order to avoid building the whole project, you can just run:
+
+```shell
+./gradlew generateComposeResClass
+```
+
 And now in your UI code:
 ```kotlin
 import dev.funkymuse.myawesomeproject.resources.Res
