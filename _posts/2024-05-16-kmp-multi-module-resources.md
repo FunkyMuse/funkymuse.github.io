@@ -22,7 +22,7 @@ Then Jetbrains introduced [Images and Resources](https://www.jetbrains.com/help/
 
 I won't bore you with the details as they were explained by JetBrains. However, the most important things you should be aware of are:
 - Almost all resources are read synchronously in the caller thread. The only exceptions are raw files and all of the resources on the JS platform that are read asynchronously.
-- Reading big raw files, like long videos, as a stream is not supported yet. Use separate files on the user device and read them with the file system API, for example, the [kotlinx-io])(https://github.com/Kotlin/kotlinx-io) library, i'd add [okio](https://github.com/square/okio) here as well
+- Reading big raw files, like long videos, as a stream is not supported yet. Use separate files on the user device and read them with the file system API, for example, the [kotlinx-io](https://github.com/Kotlin/kotlinx-io) library, i'd add [okio](https://github.com/square/okio) here as well
 - Only files that are part of the application are considered resources (this is obvious I mean, but should be highlighted)
 
 ### Setup
