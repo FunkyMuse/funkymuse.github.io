@@ -57,6 +57,8 @@ I've debugged too many ANRs caused by seemingly innocent changes that worked fin
 
 **I'm looking at you ncnn.**
 
+If your code is performant and works well on a really cheap and poorly optimized phone, it will for sure be blazing fast on a more powerful device.
+
 ## Are We Testing the Right Things?
 
 Android testing is... complex. You've got unit tests for business logic, instrumentation tests for Android components, UI tests for user flows and screenshot tests for visual regressions. Each serves a purpose, but not every change needs every type of test.
