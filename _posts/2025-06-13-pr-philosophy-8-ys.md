@@ -27,7 +27,7 @@ The Android ecosystem moves fast:
 - Kotlin became first-class (and thank you JetBrains, even though i was just getting comfortable with Java)
 - Architectural patterns keep evolving from MVP to MVVM to MVI
 
-When i review code, my first question is: will this survive the next major platform update or trend?
+When i review code, my first question is: will this survive the next major platform update, trend or some other library that influences the code?
 
 Here's what i actually look for:
 
@@ -49,7 +49,7 @@ Key questions i tend to ask:
 - **Compose performance**: Does this code trigger unnecessary recompositions?
 - **Memory management**: Are we holding references that prevent garbage collection?
 - **Background processing**: Will this work properly with Android's increasingly aggressive battery optimizations and how do we handle process death recovery?
-- **Third-party dependencies**: Will this external library behave as we expect it to, or are we about to add 50MB to our APK and introduce transitive dependencies that sometimes can just crash without a root cause?
+- **Third-party dependencies**: Will this external library behave as we expect it to, or are we about to add 50MB to our APK and introduce transitive dependencies that sometimes can just crash without an easily traceable cause?
 
 Network calls deserve special attention. Whether you're using Ktor, Retrofit, or raw HTTP clients, the configuration matters. Caching strategies, timeout handling and how you handle retries, and offline scenarios directly impact user experience. Usually you set this once and forget it, but the setup is critically important.
 
