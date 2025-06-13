@@ -1,11 +1,11 @@
 ---
-title: My Android PR Review Philosophy; 8 Years of Mobile Development Insights
+title: My Android PR Review Philosophy; 7 Years of Mobile Development Insights
 date: 2025-06-13 23:50:00 +0200
 categories: [Development, Code Review]
 tags: [Development]
 ---
 
-After eight years building Android apps, two of which spent leading engineering teams, i've learned that good code reviews can make or break a project, maybe not break it dramatically but throw a punch that can put a crack into it.
+After seven years building Android apps, two of which spent leading engineering teams, i've learned that good code reviews can make or break a project, maybe not break it dramatically but throw a punch that can put a crack into it.
 
 Whether i'm reviewing contributions to code i maintain, evaluating team members during promotion cycles, or just trying to keep our production apps from crashing, i've developed four core principles that consistently help me spot the difference between code that ships and code that survives.
 
