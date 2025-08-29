@@ -1129,7 +1129,5 @@ Lately my efforts are poured more into backend development with Ktor which is an
 
 This architecture successfully powers [WallHub](https://wallhub.app/) on both iOS and Android platforms, demonstrating its real world "viability" and cross-platform adaptation if one can say such thing.
 
-Stay hydrated and see talk to you soon, until next article...
----
+Stay hydrated, until next article...
 
-*What's your experience with ViewModel data loading patterns? Have you encountered similar challenges, or do you prefer different approaches?*
