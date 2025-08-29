@@ -726,6 +726,96 @@ abstract class ViewModelLoader<State : Any, Intent : Any, Trigger : Any> : ViewM
 
 Our final implementation becomes remarkably clean and maintainable:
 
+```kotlin
+internal class UserAccountDetailsViewModel private constructor(
+    private val getUserDetailsUseCase: GetUserDetailsUseCase = GetUserDetailsUseCase.create(),
+) : ViewModelLoader<UserAccountDetailsViewModel.ViewState, UserAccountDetailsViewModel.ViewState.Intents, UserAccountDetailsViewModel.ViewState.StateTriggers>() {
+
+    data class ViewState(
+        val isLoading: Boolean = false,
+        val isError: Boolean = false,
+        val isEmailVisible: Boolean = false,
+        val userInfo: UserInfo? = null
+    ) {
+        val isDataLoaded get() = userInfo != null
+
+        data class UserInfo(
+            val displayEmail: String,
+            val avatarUrl: String?,
+            val showPremiumBadge: Boolean,
+            val memberSince: String?
+        )
+
+        sealed class Intents {
+            data object Refresh : Intents()
+            data class ToggleEmailVisibility(val isEmailVisible: Boolean) : Intents()
+        }
+
+        sealed class StateTriggers {
+            data class EmailVisibilityChanged(val isEmailVisible: Boolean) : StateTriggers()
+            data object Refresh : StateTriggers()
+        }
+    }
+
+
+    override val state = loadData(
+        initialState = ViewState(isLoading = true, isError = false),
+        loadData = { currentState ->
+            if (currentState.isDataLoaded.not() || currentState.isError.not()) {
+                emit(getUserDetailsState())
+            }
+        },
+        triggerData = { currentState, refreshParams ->
+            when (refreshParams) {
+                is ViewState.StateTriggers.EmailVisibilityChanged -> {
+                    emit(currentState.copy(isEmailVisible = refreshParams.isEmailVisible))
+                }
+
+                ViewState.StateTriggers.Refresh -> {
+                    emit(ViewState(isLoading = true, isError = false))
+                    emit(getUserDetailsState())
+                }
+            }
+        }
+    )
+
+    private suspend fun getUserDetailsState(): ViewState = getUserDetailsUseCase.execute()
+        .fold(
+            onSuccess = {
+                ViewState(
+                    isLoading = false,
+                    isError = false,
+                    userInfo = ViewState.UserInfo(
+                        displayEmail = it.email,
+                        avatarUrl = it.avatarUrl,
+                        showPremiumBadge = it.isPremium,
+                        memberSince = it.creationDate?.toString()
+                    )
+                )
+            },
+            onFailure = {
+                ViewState(isLoading = false, isError = true)
+            }
+        )
+
+    override fun onIntent(intent: ViewState.Intents) {
+        when (intent) {
+            ViewState.Intents.Refresh -> {
+                sendTrigger(ViewState.StateTriggers.Refresh)
+            }
+
+            is ViewState.Intents.ToggleEmailVisibility -> {
+                sendTrigger(ViewState.StateTriggers.EmailVisibilityChanged(intent.isEmailVisible))
+            }
+        }
+    }
+
+    companion object {
+        fun factory() = provideFactory { UserAccountDetailsViewModel() }
+    }
+}
+```
+
 ### Handling UI State Complexity
 
 This abstraction uses boolean flags (`isLoading`, `isError`) which can create ambiguous states. For clearer state management, consider using sealed classes:
