@@ -57,6 +57,8 @@ The solution leverages Kotlin Flows—specifically transforming cold flows into 
 
 ### Building the Foundation: Use Case and ViewModel Structure
 
+**DO NOTE THAT THIS CODE IS FOR DEMONSTRATION PURPOSES ONLY, HOW YOU STRUCTURE IT IS UP TO YOU, IT'S NOT BEST PRACTICES EXCEPT THE PART ABOUT LOADING**
+
 ```kotlin
 inline fun <reified T : ViewModel> provideFactory(
     crossinline creator: () -> T
