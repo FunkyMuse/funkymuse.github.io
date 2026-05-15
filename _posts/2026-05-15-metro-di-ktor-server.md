@@ -81,7 +81,6 @@ After Metro, the exact same constructor without the defaults:
 
 ```kotlin
 @Inject
-@SingleIn(AppScope::class)
 class PoiController(
     private val poiRepository: PoiRepository,
     private val encryptionService: PasswordEncryptionService,
@@ -262,12 +261,10 @@ Dispatchers get their own container because they're qualifier-tagged and consume
 object DispatcherBindings {
 
     @Provides
-    @SingleIn(AppScope::class)
     @IoDispatcher
     fun provideIoDispatcher(): CoroutineDispatcher = Dispatchers.IO
 
     @Provides
-    @SingleIn(AppScope::class)
     @DatabaseDispatcher
     fun provideDatabaseDispatcher(appConfig: ApplicationConfiguration): CoroutineDispatcher =
         Dispatchers.IO.limitedParallelism(
