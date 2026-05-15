@@ -392,12 +392,12 @@ fun interface RouteRegistrar {
 }
 ```
 
-Every route annotated with `@ContributesIntoSet(AppScope::class, binding = binding<RouteRegistrar>())`
+Every route annotated with `@ContributesIntoSet(AppScope::class)`
 is automatically included in `Set<RouteRegistrar>` - the one `BackendGraph` exposes as `allRoutes`, how much i don't miss dagger's `@Binds` where i had to create an extra class just to bind an impl > interface, anyways here's how it looks with Metro:
 
 ```kotlin
 @Inject
-@ContributesIntoSet(AppScope::class, binding = binding<RouteRegistrar>())
+@ContributesIntoSet(AppScope::class)
 class ClaimDailyXpRoute(private val controller: DailyXpClaimController) : RouteRegistrar {
     override fun Application.register() {
         routing {
@@ -428,7 +428,7 @@ the userId from the JWT and responds 401 automatically if the token is expired o
 
 ```kotlin
 @Inject
-@ContributesIntoSet(AppScope::class, binding = binding<RouteRegistrar>())
+@ContributesIntoSet(AppScope::class)
 class RegisterDeviceRoute(private val controller: UserDetailsController) : RouteRegistrar {
     override fun Application.register() {
         routing {
@@ -485,7 +485,7 @@ Each plugin becomes an `@Inject @ContributesIntoSet` class. Plugins that need no
 
 ```kotlin
 @Inject
-@ContributesIntoSet(AppScope::class, binding = binding<PluginInstaller>())
+@ContributesIntoSet(AppScope::class)
 class CallIdPluginInstaller : PluginInstaller {
     override val order: PluginInstallerOrder = PluginInstallerOrder.CALL_ID
 
@@ -504,7 +504,7 @@ Plugins that need dependencies receive them through the constructor. Metro wires
 
 ```kotlin
 @Inject
-@ContributesIntoSet(AppScope::class, binding = binding<PluginInstaller>())
+@ContributesIntoSet(AppScope::class)
 class ContentNegotiationPluginInstaller(
     private val json: Json,
 ) : PluginInstaller {
